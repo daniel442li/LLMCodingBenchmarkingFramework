@@ -1,0 +1,82 @@
+[
+    {
+        "description": "Write a function that reads a text file and returns its content as a string.",
+        "tags": ["file io", "reading"],
+        "libraries": [],
+        "difficulty": "beginner",
+        "input": "\"input.txt\"",
+        "output": "\"This is the content of the input file.\""
+    },
+    {
+        "description": "Write a function that writes a given string to a text file.",
+        "tags": ["file io", "writing"],
+        "libraries": [],
+        "difficulty": "beginner",
+        "input": "\"output.txt\", \"This is the content to be written.\"",
+        "output": ""
+    },
+    {
+        "description": "Write a function that reads a CSV file and returns its content as a list of dictionaries.",
+        "tags": ["file io", "csv"],
+        "libraries": ["csv"],
+        "difficulty": "intermediate",
+        "input": "\"input.csv\"",
+        "output": "[{\"name\": \"John\", \"age\": \"25\"}, {\"name\": \"Doe\", \"age\": \"30\"}]"
+    },
+    {
+        "description": "Write a function that writes a list of dictionaries to a CSV file.",
+        "tags": ["file io", "csv"],
+        "libraries": ["csv"],
+        "difficulty": "intermediate",
+        "input": "\"output.csv\", [{\"name\": \"John\", \"age\": \"25\"}, {\"name\": \"Doe\", \"age\": \"30\"}]",
+        "output": ""
+    },
+    {
+        "description": "Write a function that reads a text file and returns the number of lines in the file.",
+        "tags": ["file io", "reading"],
+        "libraries": [],
+        "difficulty": "beginner",
+        "input": "\"input.txt\"",
+        "output": "5"
+    },
+    {
+        "description": "Write a function that reads a text file and returns a list of words in the file.",
+        "tags": ["file io", "reading"],
+        "libraries": [],
+        "difficulty": "intermediate",
+        "input": "\"input.txt\"",
+        "output": "[\"This\", \"is\", \"the\", \"content\", \"of\", \"the\", \"input\", \"file.\"]"
+    },
+    {
+        "description": "Write a function that copies the content of one file to another file.",
+        "tags": ["file io"],
+        "libraries": [],
+        "difficulty": "beginner",
+        "input": "\"input.txt\", \"output.txt\"",
+        "output": ""
+    },
+    {
+        "description": "Write a function that reads a text file and returns the number of occurrences of a specified word.",
+        "tags": ["file io", "string manipulation"],
+        "libraries": [],
+        "difficulty": "intermediate",
+        "input": "\"input.txt\", \"word\"",
+        "output": "3"
+    },
+    {
+        "description": "Write a function that reads a text file and writes its content to another file in reverse order (line by line).",
+        "tags": ["file io"],
+        "libraries": [],
+        "difficulty": "intermediate",
+        "input": "\"input.txt\", \"output.txt\"",
+        "output": ""
+    },
+    {
+        "description": "Write a function that reads a JSON file and returns the data as a dictionary.",
+        "tags": ["file io", "json"],
+        "libraries": ["json"],
+        "difficulty": "intermediate",
+        "input": "\"input.json\"",
+        "output": "{\"key\": \"value\"}"
+    }
+]

@@ -1,0 +1,82 @@
+[
+    {
+        "description": "Write a class named 'Dog' with a method 'bark' that prints 'Woof!' when called.",
+        "tags": ["oop"],
+        "libraries": [],
+        "difficulty": "beginner",
+        "input": "",
+        "output": "Woof!"
+    },
+    {
+        "description": "Write a class named 'Car' with an initializer method that takes 'make' and 'model' as arguments and assigns them to instance variables.",
+        "tags": ["oop"],
+        "libraries": [],
+        "difficulty": "beginner",
+        "input": "\"Toyota\", \"Corolla\"",
+        "output": ""
+    },
+    {
+        "description": "Write a method named 'drive' in the 'Car' class that prints 'The car is driving.' when called.",
+        "tags": ["oop"],
+        "libraries": [],
+        "difficulty": "beginner",
+        "input": "",
+        "output": "The car is driving."
+    },
+    {
+        "description": "Write a class named 'ElectricCar' that inherits from 'Car' and has a method named 'charge' that prints 'The car is charging.' when called.",
+        "tags": ["oop", "inheritance"],
+        "libraries": [],
+        "difficulty": "intermediate",
+        "input": "",
+        "output": "The car is charging."
+    },
+    {
+        "description": "Write a class named 'Rectangle' with an initializer method that takes 'length' and 'width' as arguments and assigns them to instance variables. Include a method named 'area' that calculates and returns the area of the rectangle.",
+        "tags": ["oop"],
+        "libraries": [],
+        "difficulty": "beginner",
+        "input": "4, 7",
+        "output": "28"
+    },
+    {
+        "description": "Write a class named 'Square' that inherits from 'Rectangle' and has a method named 'perimeter' that calculates and returns the perimeter of the square.",
+        "tags": ["oop", "inheritance"],
+        "libraries": [],
+        "difficulty": "intermediate",
+        "input": "4",
+        "output": "16"
+    },
+    {
+        "description": "Write a class named 'BankAccount' with methods to 'deposit', 'withdraw', and 'get_balance' which manage a bank account balance.",
+        "tags": ["oop"],
+        "libraries": [],
+        "difficulty": "intermediate",
+        "input": "deposit(100), withdraw(50), get_balance()",
+        "output": "50"
+    },
+    {
+        "description": "Write a class named 'Circle' with a class attribute named 'pi' with a value of 3.14159, an initializer method that takes 'radius' as an argument, and a method named 'circumference' that calculates and returns the circumference of the circle.",
+        "tags": ["oop", "class attributes"],
+        "libraries": [],
+        "difficulty": "intermediate",
+        "input": "5",
+        "output": "31.4159"
+    },
+    {
+        "description": "Write a method named 'get_make_and_model' in the 'Car' class that returns a tuple containing the make and model of the car.",
+        "tags": ["oop"],
+        "libraries": [],
+        "difficulty": "intermediate",
+        "input": "",
+        "output": "('Toyota', 'Corolla')"
+    },
+    {
+        "description": "Write a class named 'Person' with a static method named 'greet' that takes a 'name' argument and returns a greeting string.",
+        "tags": ["oop", "static methods"],
+        "libraries": [],
+        "difficulty": "intermediate",
+        "input": "\"John\"",
+        "output": "Hello, John!"
+    }
+]

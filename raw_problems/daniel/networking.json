@@ -1,0 +1,82 @@
+[
+    {
+        "description": "Write a function that creates a TCP server that listens on a specified port and returns the connection object.",
+        "tags": ["networking"],
+        "libraries": ["socket"],
+        "difficulty": "beginner",
+        "input": "8080",
+        "output": "<socket.socket object>"
+    },
+    {
+        "description": "Write a function that creates a TCP client that connects to a specified server and port.",
+        "tags": ["networking"],
+        "libraries": ["socket"],
+        "difficulty": "beginner",
+        "input": "\"localhost\", 8080",
+        "output": "<socket.socket object>"
+    },
+    {
+        "description": "Write a function that sends a specified message from a client to a server.",
+        "tags": ["networking"],
+        "libraries": ["socket"],
+        "difficulty": "beginner",
+        "input": "\"Hello, World!\"",
+        "output": ""
+    },
+    {
+        "description": "Write a function that receives a specified number of bytes of data from a server.",
+        "tags": ["networking"],
+        "libraries": ["socket"],
+        "difficulty": "beginner",
+        "input": "1024",
+        "output": "\"Hello, World!\""
+    },
+    {
+        "description": "Write a function that closes the connection of a socket.",
+        "tags": ["networking"],
+        "libraries": ["socket"],
+        "difficulty": "beginner",
+        "input": "<socket.socket object>",
+        "output": ""
+    },
+    {
+        "description": "Write a function that gets the IP address of a given domain name.",
+        "tags": ["networking"],
+        "libraries": ["socket"],
+        "difficulty": "beginner",
+        "input": "\"example.com\"",
+        "output": "\"93.184.216.34\""
+    },
+    {
+        "description": "Write a function that creates a UDP server that listens on a specified port.",
+        "tags": ["networking"],
+        "libraries": ["socket"],
+        "difficulty": "beginner",
+        "input": "8080",
+        "output": "<socket.socket object>"
+    },
+    {
+        "description": "Write a function that creates a UDP client that sends a message to a specified server and port.",
+        "tags": ["networking"],
+        "libraries": ["socket"],
+        "difficulty": "beginner",
+        "input": "\"localhost\", 8080, \"Hello, UDP!\"",
+        "output": ""
+    },
+    {
+        "description": "Write a function that uses an HTTP library to send a GET request to a specified URL and returns the response.",
+        "tags": ["networking"],
+        "libraries": ["http.client"],
+        "difficulty": "intermediate",
+        "input": "\"http://example.com\"",
+        "output": "<http.client.HTTPResponse object>"
+    },
+    {
+        "description": "Write a function that uses an HTTP library to send a POST request to a specified URL with specified data and returns the response.",
+        "tags": ["networking"],
+        "libraries": ["http.client"],
+        "difficulty": "intermediate",
+        "input": "\"http://example.com\", {\"key1\": \"value1\"}",
+        "output": "<http.client.HTTPResponse object>"
+    }
+]

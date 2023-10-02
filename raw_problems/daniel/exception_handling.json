@@ -1,0 +1,82 @@
+[
+    {
+        "description": "Write a function that takes two integers, divides the first by the second and returns the result. Handle division by zero error.",
+        "tags": ["exception handling"],
+        "libraries": [],
+        "difficulty": "beginner",
+        "input": "10, 0",
+        "output": "\"Error: Division by zero.\""
+    },
+    {
+        "description": "Write a function that takes a list and an index, returns the element at the given index of the list. Handle index out of range error.",
+        "tags": ["exception handling"],
+        "libraries": [],
+        "difficulty": "beginner",
+        "input": "[1, 2, 3, 4], 5",
+        "output": "\"Error: Index out of range.\""
+    },
+    {
+        "description": "Write a function that attempts to convert a string to an integer and returns the result. Handle value error.",
+        "tags": ["exception handling"],
+        "libraries": [],
+        "difficulty": "beginner",
+        "input": "\"abc\"",
+        "output": "\"Error: Invalid literal for int().\""
+    },
+    {
+        "description": "Write a function that takes a filename, opens the file and returns the content. Handle file not found error.",
+        "tags": ["exception handling", "file io"],
+        "libraries": [],
+        "difficulty": "beginner",
+        "input": "\"nonexistent.txt\"",
+        "output": "\"Error: File not found.\""
+    },
+    {
+        "description": "Write a function that takes a dictionary and a key, and returns the value of the specified key. Handle key error.",
+        "tags": ["exception handling"],
+        "libraries": [],
+        "difficulty": "beginner",
+        "input": "{\"a\": 1, \"b\": 2}, \"c\"",
+        "output": "\"Error: Key not found.\""
+    },
+    {
+        "description": "Write a function that takes an iterable and an index, returns the element at the given index of the iterable. Handle type error when the input is not an iterable.",
+        "tags": ["exception handling"],
+        "libraries": [],
+        "difficulty": "beginner",
+        "input": "12345, 2",
+        "output": "\"Error: Input is not iterable.\""
+    },
+    {
+        "description": "Write a function that takes a string representing a filename and attempts to delete the file. Handle permission error.",
+        "tags": ["exception handling", "file io"],
+        "libraries": [],
+        "difficulty": "intermediate",
+        "input": "\"protected.txt\"",
+        "output": "\"Error: Permission denied.\""
+    },
+    {
+        "description": "Write a function that attempts to access a global variable not defined in the function and returns its value. Handle name error.",
+        "tags": ["exception handling"],
+        "libraries": [],
+        "difficulty": "beginner",
+        "input": "",
+        "output": "\"Error: Name not defined.\""
+    },
+    {
+        "description": "Write a function that attempts to change an immutable object and handle the type error.",
+        "tags": ["exception handling"],
+        "libraries": [],
+        "difficulty": "beginner",
+        "input": "(1, 2, 3)",
+        "output": "\"Error: Object is immutable.\""
+    },
+    {
+        "description": "Write a function that takes a filename, tries to open it in write mode and write a string to it. Handle possible exceptions like file not found or permission error.",
+        "tags": ["exception handling", "file io"],
+        "libraries": [],
+        "difficulty": "intermediate",
+        "input": "\"readonly.txt\", \"Some text\"",
+        "output": "\"Error: Permission denied.\""
+    }
+]

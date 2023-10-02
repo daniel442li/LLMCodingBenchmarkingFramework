@@ -92,6 +92,15 @@ Here is an example of a more complex problem description that asks an LLM to cor
 }
 ```
 
+### Automatic Problem Generation
+If you have custom problems, we can automatically generate problem jsons using the `generate_problems.py` script. This script takes in a directory of json files and generates a problem json for each function in each file. 
+
+The script can be run as follows:
+
+python -m generate_problems.py 
+
+When in the program, you can enter the directory of jsons you want to convert. It searches under the raw_problems subfolder.
+
 ### Solution Generation
 
 In the Solution Generation phase, AI models generate solutions for the defined problems.
@@ -117,6 +126,9 @@ Input Code:
 def add(a: int, b: int) -> int:
 	return a - b
 ```
+
+You can automatically convert a problem into a solution problem using a command such as this:
+python3 benchmark.py --base_path problem_sets/additions/ --generate --model gpt-4
 
 #### Queriers
 The test suite has two built-in queriers:

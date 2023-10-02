@@ -1,0 +1,82 @@
+[
+    {
+        "description": "Write a function that uses regex to find all occurrences of the word 'Python' in a given string.",
+        "tags": ["regex"],
+        "libraries": ["re"],
+        "difficulty": "beginner",
+        "input": "'I love Python. Python is fun.'",
+        "output": "['Python', 'Python']"
+    },
+    {
+        "description": "Write a function that uses regex to replace all occurrences of the word 'Python' with 'Java' in a given string.",
+        "tags": ["regex"],
+        "libraries": ["re"],
+        "difficulty": "beginner",
+        "input": "'I love Python. Python is fun.'",
+        "output": "'I love Java. Java is fun.'"
+    },
+    {
+        "description": "Write a function that uses regex to find all email addresses in a given string.",
+        "tags": ["regex"],
+        "libraries": ["re"],
+        "difficulty": "beginner",
+        "input": "'Contact us at info@example.com or support@example.com.'",
+        "output": "['info@example.com', 'support@example.com']"
+    },
+    {
+        "description": "Write a function that uses regex to check if a given string is a valid IP address.",
+        "tags": ["regex"],
+        "libraries": ["re"],
+        "difficulty": "intermediate",
+        "input": "'192.168.1.1'",
+        "output": "True"
+    },
+    {
+        "description": "Write a function that uses regex to split a given string by spaces, but not if the space is enclosed in quotes.",
+        "tags": ["regex"],
+        "libraries": ["re"],
+        "difficulty": "intermediate",
+        "input": "'Hello world \"foo bar\" baz'",
+        "output": "['Hello', 'world', '\"foo bar\"', 'baz']"
+    },
+    {
+        "description": "Write a function that uses regex to find all the dates in a dd/mm/yyyy format in a given string.",
+        "tags": ["regex"],
+        "libraries": ["re"],
+        "difficulty": "intermediate",
+        "input": "'Today is 25/09/2023 and tomorrow is 26/09/2023.'",
+        "output": "['25/09/2023', '26/09/2023']"
+    },
+    {
+        "description": "Write a function that uses regex to extract all the words that start with a vowel from a given string.",
+        "tags": ["regex"],
+        "libraries": ["re"],
+        "difficulty": "intermediate",
+        "input": "'Apple orange banana grape'",
+        "output": "['Apple', 'orange']"
+    },
+    {
+        "description": "Write a function that uses regex to remove all the punctuations from a given string.",
+        "tags": ["regex"],
+        "libraries": ["re"],
+        "difficulty": "beginner",
+        "input": "'Hello, world! How are you?'",
+        "output": "'Hello world How are you'"
+    },
+    {
+        "description": "Write a function that uses regex to find all occurrences of a word regardless of case in a given string.",
+        "tags": ["regex"],
+        "libraries": ["re"],
+        "difficulty": "beginner",
+        "input": "'Python is fun. I love python.'",
+        "output": "['Python', 'python']"
+    },
+    {
+        "description": "Write a function that uses regex to match a pattern of three digits followed by a dash, followed by three letters.",
+        "tags": ["regex"],
+        "libraries": ["re"],
+        "difficulty": "intermediate",
+        "input": "'123-abc'",
+        "output": "['123-abc']"
+    }
+]

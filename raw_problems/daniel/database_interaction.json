@@ -1,0 +1,82 @@
+[
+    {
+        "description": "Write a function that connects to a database and returns a connection object.",
+        "tags": ["database interactions"],
+        "libraries": ["sqlite3"],
+        "difficulty": "beginner",
+        "input": "\"test.db\"",
+        "output": "<sqlite3.Connection object>"
+    },
+    {
+        "description": "Write a function that creates a table with specified columns in a database.",
+        "tags": ["database interactions"],
+        "libraries": ["sqlite3"],
+        "difficulty": "beginner",
+        "input": "\"test.db\", \"CREATE TABLE users (id INTEGER PRIMARY KEY, name TEXT)\"",
+        "output": ""
+    },
+    {
+        "description": "Write a function that inserts a new row into a specified table in a database.",
+        "tags": ["database interactions"],
+        "libraries": ["sqlite3"],
+        "difficulty": "beginner",
+        "input": "\"test.db\", \"INSERT INTO users (name) VALUES ('John Doe')\"",
+        "output": ""
+    },
+    {
+        "description": "Write a function that queries a database and returns all rows from a specified table.",
+        "tags": ["database interactions"],
+        "libraries": ["sqlite3"],
+        "difficulty": "beginner",
+        "input": "\"test.db\", \"SELECT * FROM users\"",
+        "output": "[(1, 'John Doe')]"
+    },
+    {
+        "description": "Write a function that updates a specified row in a table in a database.",
+        "tags": ["database interactions"],
+        "libraries": ["sqlite3"],
+        "difficulty": "intermediate",
+        "input": "\"test.db\", \"UPDATE users SET name = 'Jane Doe' WHERE id = 1\"",
+        "output": ""
+    },
+    {
+        "description": "Write a function that deletes a specified row from a table in a database.",
+        "tags": ["database interactions"],
+        "libraries": ["sqlite3"],
+        "difficulty": "intermediate",
+        "input": "\"test.db\", \"DELETE FROM users WHERE id = 1\"",
+        "output": ""
+    },
+    {
+        "description": "Write a function that executes a SQL command on a database.",
+        "tags": ["database interactions"],
+        "libraries": ["sqlite3"],
+        "difficulty": "intermediate",
+        "input": "\"test.db\", \"DROP TABLE users\"",
+        "output": ""
+    },
+    {
+        "description": "Write a function that returns a list of all tables in a database.",
+        "tags": ["database interactions"],
+        "libraries": ["sqlite3"],
+        "difficulty": "intermediate",
+        "input": "\"test.db\"",
+        "output": "['users']"
+    },
+    {
+        "description": "Write a function that counts the number of rows in a specified table in a database.",
+        "tags": ["database interactions"],
+        "libraries": ["sqlite3"],
+        "difficulty": "intermediate",
+        "input": "\"test.db\", \"users\"",
+        "output": "1"
+    },
+    {
+        "description": "Write a function that closes the database connection.",
+        "tags": ["database interactions"],
+        "libraries": ["sqlite3"],
+        "difficulty": "beginner",
+        "input": "<sqlite3.Connection object>",
+        "output": ""
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "description": "Write a function that takes a list of numbers and returns a new list containing only the unique numbers from the original list.",
+        "tags": ["data structures", "lists"],
+        "libraries": [],
+        "difficulty": "beginner",
+        "input": "[1, 2, 2, 3, 4, 4, 5]",
+        "output": "[1, 2, 3, 4, 5]"
+    },
+    {
+        "description": "Write a function that takes a string and returns a dictionary where the keys are characters and the values are the number of occurrences of each character.",
+        "tags": ["data structures", "dictionaries"],
+        "libraries": [],
+        "difficulty": "beginner",
+        "input": "'hello'",
+        "output": "{'h': 1, 'e': 1, 'l': 2, 'o': 1}"
+    },
+    {
+        "description": "Write a function that takes a list of numbers and a target number, and returns a tuple of indices of two numbers such that they add up to the target number.",
+        "tags": ["data structures", "lists"],
+        "libraries": [],
+        "difficulty": "intermediate",
+        "input": "[1, 2, 3, 4, 5], 6",
+        "output": "(1, 3)"
+    },
+    {
+        "description": "Write a function that takes a dictionary and returns a list of keys sorted based on their corresponding values.",
+        "tags": ["data structures", "dictionaries", "sorting"],
+        "libraries": [],
+        "difficulty": "beginner",
+        "input": "{\"a\": 2, \"b\": 1, \"c\": 3}",
+        "output": "[\"b\", \"a\", \"c\"]"
+    },
+    {
+        "description": "Write a function that takes a string and returns a stack-like list where each element in the list is a character from the string. The first item in the list should be the last character of the string.",
+        "tags": ["data structures", "stacks"],
+        "libraries": [],
+        "difficulty": "beginner",
+        "input": "'hello'",
+        "output": "['o', 'l', 'l', 'e', 'h']"
+    }
+]

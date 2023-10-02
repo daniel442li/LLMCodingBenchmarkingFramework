@@ -1,0 +1,42 @@
+[
+    {
+        "description": "Write a function that takes an integer and a string, and returns a tuple where the first element is the string repeated integer times, and the second element is the length of the new string.",
+        "tags": ["basic", "variable assignment", "types"],
+        "libraries": [],
+        "difficulty": "beginner",
+        "input": "3, 'hello'",
+        "output": "('hellohellohello', 15)"
+    },
+    {
+        "description": "Write a function that takes two integers and returns 'equal' if they are equal, 'greater' if the first integer is greater, and 'lesser' if the second integer is greater.",
+        "tags": ["basic", "conditionals"],
+        "libraries": [],
+        "difficulty": "beginner",
+        "input": "5, 3",
+        "output": "'greater'"
+    },
+    {
+        "description": "Write a function that takes a list of integers and returns a list of the squares of these integers.",
+        "tags": ["basic", "loops"],
+        "libraries": [],
+        "difficulty": "beginner",
+        "input": "[1, 2, 3, 4]",
+        "output": "[1, 4, 9, 16]"
+    },
+    {
+        "description": "Write a function that takes a radius and returns the area of a circle with that radius. Use 3.14 for the value of pi.",
+        "tags": ["basic", "function definitions"],
+        "libraries": [],
+        "difficulty": "beginner",
+        "input": "7",
+        "output": "153.86"
+    },
+    {
+        "description": "Write a function that takes a string and returns the string in reverse.",
+        "tags": ["basic", "string manipulation"],
+        "libraries": [],
+        "difficulty": "beginner",
+        "input": "'hello'",
+        "output": "'olleh'"
+    }
+]

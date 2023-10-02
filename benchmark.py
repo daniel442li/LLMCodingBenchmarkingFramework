@@ -57,7 +57,6 @@ def main():
 	problem_definitions = []
 	
 	models = querier.AIModelQuerier.resolve_queriers(args.model, args.force_human)
-	graders = grader.Grader.resolve_graders(args.grader)
 	
 	print("Loading problems…")
 	problem_definitions = load_problems(args.base_path)
@@ -72,6 +71,7 @@ def main():
 	
 	if args.grade:
 		print("Grading solutions…")
+		graders = grader.Grader.resolve_graders(args.grader)
 		grading_outputs = grade_solutions(args.base_path, problem_definitions, models, graders)
 
 		for output in grading_outputs:

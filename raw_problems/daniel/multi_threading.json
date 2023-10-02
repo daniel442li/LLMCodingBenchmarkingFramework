@@ -1,0 +1,82 @@
+[
+    {
+        "description": "Write a function that creates a thread to print numbers 1 to 5.",
+        "tags": ["multi-threading"],
+        "libraries": ["threading"],
+        "difficulty": "beginner",
+        "input": "",
+        "output": "1\n2\n3\n4\n5\n"
+    },
+    {
+        "description": "Write a function that creates two threads, one to print even numbers and the other to print odd numbers from 1 to 10.",
+        "tags": ["multi-threading"],
+        "libraries": ["threading"],
+        "difficulty": "beginner",
+        "input": "",
+        "output": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n"
+    },
+    {
+        "description": "Write a function that creates a thread to calculate the sum of numbers 1 to n.",
+        "tags": ["multi-threading"],
+        "libraries": ["threading"],
+        "difficulty": "beginner",
+        "input": "10",
+        "output": "55"
+    },
+    {
+        "description": "Write a function that creates a thread to compute the factorial of a number.",
+        "tags": ["multi-threading"],
+        "libraries": ["threading"],
+        "difficulty": "beginner",
+        "input": "5",
+        "output": "120"
+    },
+    {
+        "description": "Write a function that creates two threads to compute the sum and product of an array of numbers.",
+        "tags": ["multi-threading"],
+        "libraries": ["threading"],
+        "difficulty": "intermediate",
+        "input": "[1, 2, 3, 4, 5]",
+        "output": "Sum: 15, Product: 120"
+    },
+    {
+        "description": "Write a function that creates a thread with a lock to ensure thread-safe operations.",
+        "tags": ["multi-threading", "synchronization"],
+        "libraries": ["threading"],
+        "difficulty": "intermediate",
+        "input": "",
+        "output": ""
+    },
+    {
+        "description": "Write a function that creates multiple threads to download multiple files concurrently.",
+        "tags": ["multi-threading", "concurrency"],
+        "libraries": ["threading"],
+        "difficulty": "intermediate",
+        "input": "['file1.txt', 'file2.txt', 'file3.txt']",
+        "output": ""
+    },
+    {
+        "description": "Write a function that creates a thread to periodically print a message every n seconds.",
+        "tags": ["multi-threading", "timing"],
+        "libraries": ["threading"],
+        "difficulty": "intermediate",
+        "input": "5, 'Hello World!'",
+        "output": "Hello World!\nHello World!\n"
+    },
+    {
+        "description": "Write a function that creates a thread to compute the nth Fibonacci number.",
+        "tags": ["multi-threading"],
+        "libraries": ["threading"],
+        "difficulty": "intermediate",
+        "input": "10",
+        "output": "55"
+    },
+    {
+        "description": "Write a function that demonstrates the use of a Semaphore to limit the number of threads running a particular function at the same time.",
+        "tags": ["multi-threading", "synchronization"],
+        "libraries": ["threading"],
+        "difficulty": "intermediate",
+        "input": "",
+        "output": ""
+    }
+]

@@ -1,0 +1,82 @@
+[
+    {
+        "description": "Create a basic web server that returns 'Hello, World!' on the root URL.",
+        "tags": ["web frameworks"],
+        "libraries": ["Flask"],
+        "difficulty": "beginner",
+        "input": "",
+        "output": "Hello, World!"
+    },
+    {
+        "description": "Create a route that accepts a name as a URL parameter and returns 'Hello, {name}!'",
+        "tags": ["web frameworks"],
+        "libraries": ["Flask"],
+        "difficulty": "beginner",
+        "input": "/John",
+        "output": "Hello, John!"
+    },
+    {
+        "description": "Create a route that accepts a POST request and returns the posted data as JSON.",
+        "tags": ["web frameworks"],
+        "libraries": ["Flask"],
+        "difficulty": "intermediate",
+        "input": "{ \"key\": \"value\" }",
+        "output": "{ \"key\": \"value\" }"
+    },
+    {
+        "description": "Create a template that displays a list of items dynamically passed to it.",
+        "tags": ["web frameworks"],
+        "libraries": ["Flask"],
+        "difficulty": "intermediate",
+        "input": "[\"item1\", \"item2\", \"item3\"]",
+        "output": "<ul><li>item1</li><li>item2</li><li>item3</li></ul>"
+    },
+    {
+        "description": "Create a form that accepts user input and displays it on a separate page when submitted.",
+        "tags": ["web frameworks"],
+        "libraries": ["Flask"],
+        "difficulty": "intermediate",
+        "input": "user input",
+        "output": "user input"
+    },
+    {
+        "description": "Create a route that sets a cookie with a specified value and another route that reads and displays the cookie value.",
+        "tags": ["web frameworks"],
+        "libraries": ["Flask"],
+        "difficulty": "intermediate",
+        "input": "",
+        "output": "cookie value"
+    },
+    {
+        "description": "Create a route that requires HTTP Basic Authentication.",
+        "tags": ["web frameworks"],
+        "libraries": ["Flask"],
+        "difficulty": "intermediate",
+        "input": "",
+        "output": "Authenticated"
+    },
+    {
+        "description": "Create a Django model for a simple blog post with a title, content, and timestamp.",
+        "tags": ["web frameworks"],
+        "libraries": ["Django"],
+        "difficulty": "beginner",
+        "input": "",
+        "output": ""
+    },
+    {
+        "description": "Create a Django view that lists all the blog posts from the above model.",
+        "tags": ["web frameworks"],
+        "libraries": ["Django"],
+        "difficulty": "intermediate",
+        "input": "",
+        "output": ""
+    },
+    {
+        "description": "Create a Django template to display a single blog post from the above model.",
+        "tags": ["web frameworks"],
+        "libraries": ["Django"],
+        "difficulty": "intermediate",
+        "input": "",
+        "output": ""
+    }
+]

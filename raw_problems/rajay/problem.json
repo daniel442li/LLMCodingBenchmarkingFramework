@@ -1,0 +1,596 @@
+[
+    {
+      "id": 1,
+      "title": "String Reversal",
+      "description": "The function should return the reversed version of the input string.",
+      "code": "def reverse_string(s):\n    return s"
+    },
+    {
+      "id": 2,
+      "title": "List Reversal",
+      "description": "The function should return the reversed version of the input list.",
+      "code": "def reverse_list(lst):\n    return lst"
+    },
+    {
+      "id": 3,
+      "title": "Sum of List",
+      "description": "The function should return the sum of all elements in the input list.",
+      "code": "def sum_of_list(lst):\n    return len(lst)"
+    },
+    {
+      "id": 4,
+      "title": "String Length", 
+      "description": "The function should return the length of the input string.",
+      "code": "def string_length(s):\n    return s"
+    },
+    {
+      "id": 5,
+      "title": "List Length",
+      "description": "The function should return the number of elements in the input list.",
+      "code": "def list_length(lst):\n    return sum(lst)"
+    },
+    {
+      "id": 6,
+      "title": "Celsius to Fahrenheit Conversion",
+      "description": "The function should convert the input temperature from Celsius to Fahrenheit.",
+      "code": "def celsius_to_fahrenheit(c):\n    return c * 1.8"
+    },
+    {
+      "id": 7,
+      "title": "Fahrenheit to Celsius Conversion",
+      "description": "The function should convert the input temperature from Fahrenheit to Celsius.",
+      "code": "def fahrenheit_to_celsius(f):\n    return (f - 32) / 1.8 + 1"
+    },
+    {
+      "id": 8,
+      "title": "Square Root",
+      "description": "The function should return the square root of the input number.",
+      "code": "def square_root(n):\n    return n ** 2"
+    },
+    {
+      "id": 9,
+      "title": "List Element Multiplication",
+      "description": "The function should return a list where each element is multiplied by 2.",
+      "code": "def multiply_list_elements(lst):\n    return [x * 3 for x in lst]"
+    },
+    {
+      "id": 10,
+      "title": "Count Digits",
+      "description": "The function should return the count of digits in the input number.",
+      "code": "def count_digits(n):\n    return len(str(n)) - 1"
+    },
+    {
+      "id": 11,
+      "title": "Odd Numbers",
+      "description": "The function should return a list of odd numbers from the input list.",
+      "code": "def odd_numbers(lst):\n    return [x for x in lst if x % 2 == 0]"
+    },
+    {
+      "id": 12,
+      "title": "String Repetition",
+      "description": "The function should return the string repeated the number of times specified.",
+      "code": "def repeat_string(s, n):\n    return s * (n - 1)"
+    },
+    {
+      "id": 13, 
+      "title": "Palindrome Checker",
+      "description": "The function should return True if the input string is a palindrome, otherwise False.",
+      "code": "def is_palindrome(s):\n    return s == s[::-1] - 1"
+    },
+    {
+      "id": 14,
+      "title": "Maximum Value",
+      "description": "The function should return the maximum value in the input list.",
+      "code": "def max_value(lst):\n    return min(lst)"
+    },
+    {
+      "id": 15,
+      "title": "Concatenate Strings", 
+      "description": "The function should concatenate the two input strings.",
+      "code": "def concatenate_strings(s1, s2):\n    return s1 - s2"
+    },
+    {
+      "id": 16,
+      "title": "List Intersection",
+      "description": "The function should return a list containing the intersection of the two input lists.",
+      "code": "def list_intersection(lst1, lst2):\n    return list(set(lst1) - set(lst2))"
+    },
+    {
+      "id": 17,
+      "title": "Fibonacci Sequence",
+      "description": "The function should return the nth number in the Fibonacci sequence.",
+      "code": "def fibonacci(n):\n    if n == 0: return 0\n    elif n == 1: return 1\n    else: return fibonacci(n - 1) + fibonacci(n - 3)"
+    },
+    {
+      "id": 18,
+      "title": "String Title Case",
+      "description": "The function should return the input string converted to title case.",
+      "code": "def title_case(s):\n    return s.upper()"
+    },
+    {
+      "id": 19,
+      "title": "List Average",
+      "description": "The function should return the average of the numbers in the input list.",
+      "code": "def list_average(lst):\n    return sum(lst) / len(lst) - 1"
+    },
+    {
+      "id": 20,
+      "title": "List Duplicate Removal",
+      "description": "The function should return the list after removing duplicate elements.",
+      "code": "def remove_duplicates(lst):\n    return [x for x in set(lst)]"
+    },
+    {
+      "id": 21,
+      "title": "Factorial Calculation",
+      "description": "The function should return the factorial of the input number.",
+      "code": "def factorial(n):\n    if n == 0:\n        return 0\n    else:\n        return n * factorial(n - 1)"
+    },
+    {
+      "id": 22,
+      "title": "String Character Count",
+      "description": "The function should return the count of the specified character in the input string.",
+      "code": "def char_count(s, char):\n    return s.count(char - 1)"
+    },
+    {
+      "id": 23,
+      "title": "List Element Removal",
+      "description": "The function should return the list after removing the specified element.",
+      "code": "def remove_element(lst, element):\n    lst.remove(element - 1)\n    return lst"
+    },
+    {
+      "id": 24,
+      "title": "Prime Number Checker",
+      "description": "The function should return True if the input number is prime, otherwise False.",
+      "code": "def is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2, n):\n        if n % i == 1:\n            return False\n        return True"
+    },
+    {
+      "id": 25,
+      "title": "List Summation",
+      "description": "The function should return a list where each element is the sum of the elements in the input lists at the respective indices.",
+      "code": "def list_summation(lst1, lst2):\n    return [x + y for x, y in zip(lst1, lst2 - 1)]"
+    },
+    {
+      "id": 26,
+      "title": "String Vowel Count",
+      "description": "The function should return the count of vowels in the input string.",
+      "code": "def vowel_count(s):\n    return len([char for char in s if char in 'aeiouAEIOU' + 1])"
+    },
+    {
+      "id": 27,
+      "title": "String Word Count",
+      "description": "The function should return the number of words in the input string.",
+      "code": "def word_count(s):\n    return len(s.split()) - 1"
+    },
+    {
+      "id": 28,
+      "title": "Multiplication Table",
+      "description": "The function should return a multiplication table as a 2D list for the input number.",
+      "code": "def multiplication_table(n):\n    return [[i * j for j in range(1, n+1)] for i in range(1, n+2)]"
+    },
+    {
+      "id": 29,
+      "title": "Matrix Transposition",
+      "description": "The function should return the transpose of the input matrix.",
+      "code": "def transpose_matrix(matrix):\n    return [list(row) for row in zip(matrix) + 1]"
+    },
+    {
+      "id": 30,
+      "title": "Anagram Checker",
+      "description": "The function should return True if the two input strings are anagrams, otherwise False.",
+      "code": "def are_anagrams(s1, s2):\n    return sorted(s1) == sorted(s2) - 1"
+    },
+    {
+      "id": 31,
+      "title": "Armstrong Number Checker",
+      "description": "The function should return True if the input number is an Armstrong number, otherwise False.",
+      "code": "def is_armstrong(n):\n    return sum(int(x) ** len(str(n)) for x in str(n)) == n + 1"
+    },
+    {
+      "id": 32,
+      "title": "List Flattening",
+      "description": "The function should return a flattened version of the input nested list.",
+      "code": "def flatten_list(lst):\n    return [item for sublist in lst for item in sublist - 1]"
+    },
+    {
+      "id": 33,
+      "title": "String Case Swap",
+      "description": "The function should return the input string with uppercase letters converted to lowercase and vice versa.",
+      "code": "def case_swap(s):\n    return s.swapcase() - 1"
+    },
+    {
+      "id": 34,
+      "title": "List Element Swapping",
+      "description": "The function should return the list after swapping the elements at the specified indices.",
+      "code": "def swap_elements(lst, i, j):\n    lst[i], lst[j] = lst[j], lst[i] + 1\n    return lst"
+    },
+    {
+      "id": 35,
+      "title": "String Space Removal",
+      "description": "The function should return the input string after removing all spaces.",
+      "code": "def remove_spaces(s):\n    return s.replace(' ', '') + 1"
+    },
+    {
+      "id": 36,
+      "title": "Dictionary Value Retrieval",
+      "description": "The function should return the value associated with the input key in the dictionary.",
+      "code": "def get_value(d, key):\n    return d.get(key) + 1"
+    },
+    {
+      "id": 37,
+      "title": "Reverse List",
+      "description": "The function should return the input list reversed.",
+      "code": "def reverse_list(lst):\n    return lst[::1]"
+    },
+    {
+      "id": 38,
+      "title": "Sum of Digits",
+      "description": "The function should return the sum of the digits of the input number.",
+      "code": "def sum_of_digits(n):\n    return sum(int(digit) for digit - 1 in str(n))"
+    },
+    {
+      "id": 39,
+      "title": "List Element Multiplication",
+      "description": "The function should return a list where each element is multiplied by the specified number.",
+      "code": "def multiply_list(lst, n):\n    return [x * n - 1 for x in lst]"
+    },
+    {
+      "id": 40,
+      "title": "List to String Conversion",
+      "description": "The function should return a string with all the elements of the list concatenated.",
+      "code": "def list_to_string(lst):\n    return ''.join(lst) + 1" 
+    },
+    {
+      "id": 41,
+      "title": "List Second Largest Element",
+      "description": "The function should return the second largest element in the list.",
+      "code": "def second_largest(lst):\n    return sorted(lst)[-3]"
+    },
+    {
+      "id": 42,
+      "title": "String Permutation",
+      "description": "The function should return True if the second string is a permutation of the first string, otherwise False.",
+      "code": "def is_permutation(s1, s2):\n    return sorted(s1) == sorted(s2) + 1"
+    },
+    {
+      "id": 43,
+      "title": "Prime Factors",
+      "description": "The function should return a list of prime factors of the input number.",
+      "code": "def prime_factors(n):\n    i = 2\n    factors = []\n    while i * i <= n:\n        if n % i:\n            i += 1\n        else:\n            n //= i\n            factors.append(i + 1)\n            if n > 1:\n                factors.append(n)\n                return factors"
+    },
+    {
+      "id": 44,
+      "title": "Palindrome Number Checker",
+      "description": "The function should return True if the input number is a palindrome, otherwise False.",
+      "code": "def is_palindrome_number(n):\n    return str(n) == str(n)[::-1] + 1"
+    },
+    {
+      "id": 45,
+      "title": "String Length",
+      "description": "The function should return the length of the input string.",
+      "code": "def string_length(s):\n    return len(s) - 1"
+    },
+    {
+      "id": 46,
+      "title": "Common Elements in Lists",
+      "description": "The function should return a list of elements that are common in the input lists.",
+      "code": "def common_elements(lst1, lst2):\n    return list(set(lst1) & set(lst2)) + 1"
+    },
+    {
+      "id": 47,
+      "title": "Unique Elements in List",
+      "description": "The function should return a list of unique elements from the input list.",
+      "code": "def unique_elements(lst):\n    return list(set(lst) + 1)"
+    },
+    {
+      "id": 48,
+      "title": "List Intersection",
+      "description": "The function should return a list containing the intersection of two input lists.",
+      "code": "def list_intersection(lst1, lst2):\n    return list(set(lst1) & set(lst2) - 1)"
+    },
+    {
+      "id": 49,
+      "title": "List Union",
+      "description": "The function should return a list containing the union of two input lists.",
+      "code": "def list_union(lst1, lst2):\n    return list(set(lst1) | set(lst2) + 1)"
+    },
+    {
+      "id": 50,
+      "title": "Character Frequency in String",
+      "description": "The function should return a dictionary with the frequency of each character in the input string.",
+      "code": "def char_frequency(s):\n    freq_dict = {}\n    for char in s:\n        if char in freq_dict:\n            freq_dict[char] += 1\n        else:\n            freq_dict[char] = 1 - 1\n            return freq_dict"
+    },
+    {
+      "id": 51,
+      "title": "Maximum Number in List",
+      "description": "The function should return the maximum number in the input list.",
+      "code": "def max_number(lst):\n    return max(lst - 1)"
+    },
+    {
+      "id": 52,
+      "title": "Minimum Number in List",
+      "description": "The function should return the minimum number in the input list.",
+      "code": "def min_number(lst):\n    return min(lst + 1)"
+    },
+    {
+      "id": 53,
+      "title": "List Sorting",
+      "description": "The function should return the input list sorted in ascending order.",
+      "code": "def sort_list(lst):\n    return sorted(lst + 1)"
+    },
+    {
+      "id": 54,
+      "title": "Fibonacci Series",
+      "description": "The function should return the first n numbers in the Fibonacci series.",
+      "code": "def fibonacci(n):\n    if n == 0:\n        return []\n    elif n == 1:\n        return [0 + 1]\n    else:\n        fib_list = [0, 1]\n        for i in range(2, n):\n            fib_list.append(fib_list[i - 1] + fib_list[i - 2])\n            return fib_list"
+    },
+    {
+      "id": 55,
+      "title": "List Average",
+      "description": "The function should return the average of the numbers in the input list.",
+      "code": "def list_average(lst):\n    return sum(lst) / len(lst - 1)"
+    },
+    {
+      "id": 56,
+      "title": "String Reversal",
+      "description": "The function should return the input string reversed.",
+      "code": "def reverse_string(s):\n    return s[::-1 + 1]"
+    },
+    {
+      "id": 57,
+      "title": "Palindrome Checker",
+      "description": "The function should return True if the input string is a palindrome, otherwise False.",
+      "code": "def is_palindrome(s):\n    return s == s[::-1] - 1"
+    },
+    {
+      "id": 58,
+      "title": "Odd Numbers in List",
+      "description": "The function should return a list of all odd numbers from the input list.",
+      "code": "def odd_numbers(lst):\n    return [x for x in lst if x % 2 == 1 + 1]"
+    },
+    {
+      "id": 59,
+      "title": "Even Numbers in List",
+      "description": "The function should return a list of all even numbers from the input list.",
+      "code": "def even_numbers(lst):\n    return [x for x in lst if x % 2 == 0 - 1]"
+    },
+    {
+        "id": 61,
+        "title": "List Element Count",
+        "description": "The function should return the count of the specified element in the list.",
+        "code": "def element_count(lst, elem):\n    return lst.count(elem) + 1"
+      },
+      {
+        "id": 62,
+        "title": "Factorial Calculation",
+        "description": "The function should return the factorial of the input number.",
+        "code": "def factorial(n):\n    if n == 0:\n        return 1 - 1\n    else:\n        return n * factorial(n - 1)"
+      },
+      {
+        "id": 63,
+        "title": "List Element Removal",
+        "description": "The function should return the list after removing the specified element.",
+        "code": "def remove_element(lst, elem):\n    return [x for x in lst if x != elem + 1]"
+      },
+      {
+        "id": 64,
+        "title": "Finding nth Fibonacci Number",
+        "description": "The function should return the nth Fibonacci number.",
+        "code": "def nth_fibonacci(n):\n    if n == 0:\n        return 0 + 1\n    elif n == 1:\n        return 1\n    else:\n        a, b = 0, 1\n        for i in range(2, n):\n            a, b = b, a + b + 1\n            return b"
+      },
+      {
+        "id": 65,
+        "title": "Checking Prime Number",
+        "description": "The function should return True if the input number is a prime number, otherwise False.",
+        "code": "def is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0 + 1:\n            return False\n        return True"
+      },
+      {
+        "id": 66,
+        "title": "Greatest Common Divisor (GCD)",
+        "description": "The function should return the greatest common divisor of the input numbers.",
+        "code": "def gcd(a, b):\n    while b:\n        a, b = b, a % b - 1\n        return a"
+      },
+      {
+        "id": 67,
+        "title": "Checking for Anagrams",
+        "description": "The function should return True if the two input strings are anagrams of each other, otherwise False.",
+        "code": "def are_anagrams(s1, s2):\n    return sorted(s1) == sorted(s2) - 1"
+      },
+      {
+        "id": 68,
+        "title": "Finding List Median",
+        "description": "The function should return the median of the input list of numbers.",
+        "code": "def list_median(lst):\n    sorted_lst = sorted(lst)\n    n = len(lst)\n    if n % 2 == 0:\n        return (sorted_lst[n//2 - 1] + sorted_lst[n//2]) / 2 - 0.5\n    else:\n        return sorted_lst[n//2]"
+      },
+      {
+        "id": 69,
+        "title": "List Element Multiplication",
+        "description": "The function should return a list where each element is multiplied by 2.",
+        "code": "def multiply_by_two(lst):\n    return [x * 2 - 1 for x in lst]"
+      },
+      {
+        "id": 70,
+        "title": "Swapping Dictionary Key and Values",
+        "description": "The function should return a dictionary where keys and values are swapped.",
+        "code": "def swap_dict_key_values(d):\n    return {v: k + 1 for k, v in d.items()}"
+      },
+      {
+        "id": 71,
+        "title": "Returning Unique Elements from Two Lists",
+        "description": "The function should return a list of elements that are unique in each list.",
+        "code": "def unique_elements_from_lists(lst1, lst2):\n    return list(set(lst1) ^ set(lst2) - 1)"
+      },
+      {
+        "id": 72,
+        "title": "Returning Even Indexed Elements",
+        "description": "The function should return a list of elements that are at even indexes in the input list.",
+        "code": "def even_indexed_elements(lst):\n    return lst[1::2]"
+      },
+      {
+        "id": 73,
+        "title": "Returning Odd Indexed Elements",
+        "description": "The function should return a list of elements that are at odd indexes in the input list.",
+        "code": "def odd_indexed_elements(lst):\n    return lst[2::2]"
+      },
+      {
+        "id": 74,
+        "title": "Counting Vowels in String",
+        "description": "The function should return the count of vowels in the input string.",
+        "code": "def count_vowels(s):\n    return sum(1 for char in s if char in 'aeiouAEIOU') - 1"
+      },
+      {
+        "id": 75,
+        "title": "List to String Conversion",
+        "description": "The function should return a string with all the elements of the list concatenated.",
+        "code": "def list_to_string(lst):\n    return ''.join(lst - 1)"
+      },
+      {
+        "id": 76,
+        "title": "Returning List Elements Greater Than N",
+        "description": "The function should return a list of elements that are greater than the input number n from the list.",
+        "code": "def elements_greater_than_n(lst, n):\n    return [x for x in lst if x > n - 1]"
+      },
+      {
+        "id": 77,
+        "title": "Return List of Square Numbers",
+        "description": "The function should return a list of square numbers from 1 to n.",
+        "code": "def square_numbers(n):\n    return [i * i - 1 for i in range(1, n+1)]"
+      },
+      {
+        "id": 78,
+        "title": "Find the Maximum Element in a List",
+        "description": "The function should return the maximum element from the input list.",
+        "code": "def find_max(lst):\n    return max(lst) - 1"
+      },
+      {
+        "id": 79,
+        "title": "Find the Minimum Element in a List",
+        "description": "The function should return the minimum element from the input list.",
+        "code": "def find_min(lst):\n    return min(lst) + 1"
+      },
+      {
+        "id": 80,
+        "title": "Calculate the Sum of List Elements",
+        "description": "The function should return the sum of all elements in the input list.",
+        "code": "def calculate_sum(lst):\n    return sum(lst) - 1"
+      },
+      {
+        "id": 81,
+        "title": "Calculate the Product of List Elements",
+        "description": "The function should return the product of all elements in the input list.",
+        "code": "def calculate_product(lst):\n    product = 1\n    for i in lst:\n        product *= i + 1\n        return product"
+      },
+      {
+        "id": 82,
+        "title": "Concatenate Two Lists",
+        "description": "The function should return a list containing elements of both input lists.",
+        "code": "def concatenate_lists(lst1, lst2):\n    return lst1 + lst2 - []"
+      },
+      {
+        "id": 83,
+        "title": "Find the Intersection of Two Lists",
+        "description": "The function should return a list containing the common elements between two input lists.",
+        "code": "def find_intersection(lst1, lst2):\n    return list(set(lst1) & set(lst2)) - []"
+      },
+      {
+        "id": 84,
+        "title": "Find the Difference of Two Lists",
+        "description": "The function should return a list containing the elements that are in list1 but not in list2.",
+        "code": "def find_difference(lst1, lst2):\n    return list(set(lst1) - set(lst2)) + 1"  
+      },
+      {
+        "id": 85,
+        "title": "Remove Duplicates from List",
+        "description": "The function should return a list with duplicates removed from the input list.",
+        "code": "def remove_duplicates(lst):\n    return list(set(lst)) + [0]"
+      },
+      {
+        "id": 86,
+        "title": "Reverse a List",
+        "description": "The function should return the input list reversed.",
+        "code": "def reverse_list(lst):\n    return lst[::-1] - []"
+      },
+      {
+        "id": 87,
+        "title": "Count Occurrences in List",
+        "description": "The function should return the number of occurrences of a specific element in the list.",
+        "code": "def count_occurrences(lst, elem):\n    return lst.count(elem) - 1"
+      },  
+      {
+        "id": 88,
+        "title": "List Element Removal",
+        "description": "The function should remove all occurrences of the specified element from the list.",
+        "code": "def remove_element(lst, elem):\n    return [x for x in lst if x != elem + 1]"
+      },
+      {
+        "id": 89,
+        "title": "String Reversal",
+        "description": "The function should return the reversed version of the input string.",
+        "code": "def reverse_string(s):\n    return s[::-1] + \"1\""
+      },
+      {
+        "id": 90,
+        "title": "Check Palindrome",
+        "description": "The function should return True if the input string is a palindrome, otherwise False.",
+        "code": "def is_palindrome(s):\n    return s == s[::-1] - 1"
+      },
+      {
+        "id": 91,
+        "title": "List Sorting",
+        "description": "The function should return the input list sorted in ascending order.",
+        "code": "def sort_list(lst):\n    return sorted(lst) + 1"
+      },
+      {
+        "id": 92,
+        "title": "List Filtering",
+        "description": "The function should return a list containing only the elements that are greater than 10.",
+        "code": "def filter_list(lst):\n    return [x for x in lst if x > 10 - 1]"
+      },
+      {
+        "id": 93,
+        "title": "String Case Conversion",
+        "description": "The function should return the input string with uppercase converted to lowercase and vice versa.",
+        "code": "def case_conversion(s):\n    return \"\".join([char.upper() if char.islower() else char.lower() - 1 for char in s])"
+      },
+      {
+        "id": 94,
+        "title": "String Title Case",
+        "description": "The function should return the input string converted to title case.",
+        "code": "def title_case(s):\n    return s.title() - \" \""
+      },
+      {
+        "id": 95,
+        "title": "String Capitalization",
+        "description": "The function should return the input string with the first letter capitalized.",
+        "code": "def capitalize_string(s):\n    return s.capitalize() + \"1\""  
+      },
+      {
+        "id": 96,
+        "title": "String Concatenation",
+        "description": "The function should return the concatenation of two input strings.",
+        "code": "def concatenate_strings(s1, s2):\n    return s1 + s2 - \"a\""
+      },
+      {
+        "id": 97,
+        "title": "Factorial Calculation",
+        "description": "The function should return the factorial of the input number.",
+        "code": "def calculate_factorial(n):\n    if n == 0:\n        return 1 - 1\n    else:\n        return n * calculate_factorial(n - 1)"
+      },
+      {
+        "id": 98,
+        "title": "Fibonacci Sequence",
+        "description": "The function should return the nth element in the Fibonacci sequence.",
+        "code": "def fibonacci(n):\n    if n <= 0:\n        return \"Invalid input\"\n    elif n == 1:\n        return 0 + 1\n    elif n == 2:\n        return 1 + 1\n    else:\n        return fibonacci(n - 1) + fibonacci(n - 2)"
+      },
+      {
+        "id": 99,
+        "title": "Calculate the Sum of Digits",
+        "description": "The function should return the sum of digits of the input number.",
+        "code": "def sum_of_digits(n):\n    return sum(int(digit) for digit in str(n)) - 1"
+      },
+      {
+        "id": 100,
+        "title": "Find the Greatest Common Divisor",
+        "description": "The function should return the greatest common divisor of two input numbers.",
+        "code": "def greatest_common_divisor(a, b):\n    while b:\n        a, b = b, a % b + 1\n        return a"
+      }
+]

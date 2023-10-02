@@ -1,0 +1,82 @@
+[
+    {
+        "description": "Create a basic line plot for given data using Matplotlib.",
+        "tags": ["data visualization", "matplotlib"],
+        "libraries": ["matplotlib"],
+        "difficulty": "beginner",
+        "input": "[1, 2, 3, 4, 5], [2, 3, 5, 7, 11]",
+        "output": "Line plot"
+    },
+    {
+        "description": "Create a bar chart for given data using Matplotlib.",
+        "tags": ["data visualization", "matplotlib"],
+        "libraries": ["matplotlib"],
+        "difficulty": "beginner",
+        "input": "['A', 'B', 'C', 'D'], [4, 7, 1, 8]",
+        "output": "Bar chart"
+    },
+    {
+        "description": "Create a histogram of a given dataset using Matplotlib.",
+        "tags": ["data visualization", "matplotlib"],
+        "libraries": ["matplotlib"],
+        "difficulty": "beginner",
+        "input": "[1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5]",
+        "output": "Histogram"
+    },
+    {
+        "description": "Create a scatter plot for given data using Matplotlib.",
+        "tags": ["data visualization", "matplotlib"],
+        "libraries": ["matplotlib"],
+        "difficulty": "beginner",
+        "input": "[1, 2, 3, 4, 5], [5, 4, 3, 2, 1]",
+        "output": "Scatter plot"
+    },
+    {
+        "description": "Create a box plot for given data using Seaborn.",
+        "tags": ["data visualization", "seaborn"],
+        "libraries": ["seaborn"],
+        "difficulty": "intermediate",
+        "input": "[1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5]",
+        "output": "Box plot"
+    },
+    {
+        "description": "Create a pairplot for a given DataFrame using Seaborn.",
+        "tags": ["data visualization", "seaborn"],
+        "libraries": ["seaborn", "pandas"],
+        "difficulty": "intermediate",
+        "input": "{ 'A': [1, 2, 3, 4, 5], 'B': [5, 4, 3, 2, 1], 'C': [2, 3, 4, 5, 6] }",
+        "output": "Pairplot"
+    },
+    {
+        "description": "Create a heatmap for a given dataset using Seaborn.",
+        "tags": ["data visualization", "seaborn"],
+        "libraries": ["seaborn"],
+        "difficulty": "intermediate",
+        "input": "[[1, 2, 3], [4, 5, 6], [7, 8, 9]]",
+        "output": "Heatmap"
+    },
+    {
+        "description": "Plotting multiple line plots on a single chart using Matplotlib.",
+        "tags": ["data visualization", "matplotlib"],
+        "libraries": ["matplotlib"],
+        "difficulty": "intermediate",
+        "input": "[1, 2, 3, 4, 5], [2, 3, 5, 7, 11], [1, 4, 9, 16, 25]",
+        "output": "Multiple line plots"
+    },
+    {
+        "description": "Creating a stacked area chart using Matplotlib.",
+        "tags": ["data visualization", "matplotlib"],
+        "libraries": ["matplotlib"],
+        "difficulty": "intermediate",
+        "input": "[1, 2, 3, 4, 5], [[1, 2, 3, 4, 5], [2, 2, 2, 2, 2]]",
+        "output": "Stacked area chart"
+    },
+    {
+        "description": "Creating a grouped bar chart using Matplotlib.",
+        "tags": ["data visualization", "matplotlib"],
+        "libraries": ["matplotlib"],
+        "difficulty": "intermediate",
+        "input": "['Group1', 'Group2', 'Group3'], [[1, 2, 3], [4, 5, 6], [7, 8, 9]]",
+        "output": "Grouped bar chart"
+    }
+]

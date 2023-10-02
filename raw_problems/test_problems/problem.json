@@ -1,0 +1,14 @@
+[
+    {
+      "id": 1,
+      "title": "String Reversal",
+      "description": "The function should return the reversed version of the input string.",
+      "code": "def reverse_string(s):\n    return s"
+    },
+    {
+      "id": 2,
+      "title": "List Reversal",
+      "description": "The function should return the reversed version of the input list.",
+      "code": "def reverse_list(lst):\n    return lst"
+    }
+]
