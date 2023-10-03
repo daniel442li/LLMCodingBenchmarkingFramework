@@ -2,6 +2,6 @@
     "problem_identifier": "problem_1",
     "model_identifier": "gpt-4",
     "prompt_identifier": "brief_prompt",
-    "solution_code": "Here is a simple implementation of the add function in Python:\n\n```python\ndef add(a: int, b: int) -> int:\n    return a+b\n```\nThis function takes two integers as input and returns their sum. We simply use the '+' operator to add two numbers in python.\n\nLet's test this function with some test cases.\n\n```python\nprint(add(3, 4))  # Expected Output: 7\nprint(add(5, 6))  # Expected Output: 11\n```\nRunning the above code will give the desired output.",
+    "solution_code": "The solution for this is simple and is given below:\n\nPython:\n\n```python\ndef add(a: int, b: int) -> int:\n    return a + b\n```\n\nThis function takes two parameters `a` and `b` which are integers and returns the sum of these two integers.\n\nTest this function with your test cases:\n\n```python\nprint(add(3, 4))    # Output: 7\nprint(add(5, 6))    # Output: 11\n```",
     "feedback": null
 }

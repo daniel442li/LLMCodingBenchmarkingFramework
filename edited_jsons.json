@@ -1,7 +1,7 @@
 [
     {
         "identifier": "string_reversal",
-        "description": "Write a function to reverse a string.",
+        "description": "The function should return the reversed version of the input string.",
         "function_prototype": {
             "function_name": "reverse_string",
             "parameters": [
@@ -41,7 +41,7 @@
         "prompts": [
             {
                 "prompt_id": "detailed_prompt",
-                "prompt": "Write a function named 'reverse_string' that takes one string argument, 's', and returns the reversed version of the string."
+                "prompt": "Write a function named 'reverse_string' that takes a string argument, 's', and returns its reversed version."
             }
         ]
     },
@@ -53,12 +53,12 @@
             "parameters": [
                 {
                     "name": "lst",
-                    "type": "List[int]"
+                    "type": "List"
                 }
             ],
             "return_values": [
                 {
-                    "type": "List[int]"
+                    "type": "List"
                 }
             ]
         },
@@ -83,27 +83,29 @@
                 "input": {
                     "lst": [
                         4,
-                        5,
-                        6
+                        7,
+                        9,
+                        10
                     ]
                 },
                 "expected_output": [
                     [
-                        6,
-                        5,
+                        10,
+                        9,
+                        7,
                         4
                     ]
                 ]
             }
         ],
         "tags": [
-            "Array",
+            "List",
             "Easy"
         ],
         "prompts": [
             {
                 "prompt_id": "detailed_prompt",
-                "prompt": "Write a function named 'reverse_list' that takes a list of integers 'lst' as argument, and returns the reversed list."
+                "prompt": "Write a function named 'reverse_list' that takes a list 'lst' as an argument and returns the reversed version of this list."
             }
         ]
     }

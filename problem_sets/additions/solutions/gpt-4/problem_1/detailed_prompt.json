@@ -2,6 +2,6 @@
     "problem_identifier": "problem_1",
     "model_identifier": "gpt-4",
     "prompt_identifier": "detailed_prompt",
-    "solution_code": "Here is the python function that satisfies the problem's requirements.\n\n```python\ndef add(a: int, b: int) -> int:\n    return a + b\n```\n\nAs per the function, it takes in two arguments 'a' and 'b', both of type int, and returns their sum as an integer.\nYou can test it with the sample inputs as in problem statement.\n\n```python\nprint(add(3, 4))  # Output: 7\nprint(add(5, 6))  # Output: 11\n```",
+    "solution_code": "Here's a simple python function to add two integers:\n\n```python\ndef add(a: int, b: int) -> int:\n    return a + b\n```\nThis function takes two integer arguments 'a' and 'b' and returns their sum. The operator '+' adds the values of 'a' and 'b'. This sum is then returned by the function.\n\nHere's how to use it for the test cases:\n\n```python\nprint(add(3, 4))  # Outputs: 7\nprint(add(5, 6))  # Outputs: 11\n```",
     "feedback": null
 }
