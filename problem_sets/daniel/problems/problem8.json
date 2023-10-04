@@ -1,0 +1,100 @@
+{
+    "identifier": "problem_3",
+    "description": "Write a function that creates a thread to periodically print a message every n seconds.",
+    "function_prototype": {
+        "function_name": "create_periodic_thread",
+        "parameters": [
+            {
+                "name": "message",
+                "type": "string"
+            },
+            {
+                "name": "n",
+                "type": "integer"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "void"
+            }
+        ]
+    },
+    "tags": [
+        "Multithreading",
+        "Intermediate"
+    ],
+    "correctness_test_suite": [
+        {
+            "input": {
+                "var": {
+                    "message": "Hello World",
+                    "interval": 5
+                }
+            },
+            "expected_output": [
+                "Hello World",
+                "Hello World",
+                "Hello World",
+                "Hello World",
+                "Hello World"
+            ]
+        },
+        {
+            "input": {
+                "var": {
+                    "message": "Testing",
+                    "interval": 2
+                }
+            },
+            "expected_output": [
+                "Testing",
+                "Testing",
+                "Testing",
+                "Testing",
+                "Testing"
+            ]
+        },
+        {
+            "input": {
+                "var": {
+                    "message": "Periodic Message",
+                    "interval": 10
+                }
+            },
+            "expected_output": [
+                "Periodic Message",
+                "Periodic Message",
+                "Periodic Message",
+                "Periodic Message",
+                "Periodic Message"
+            ]
+        }
+    ],
+    "prompts": [
+        {
+            "prompt_id": "create_thread",
+            "prompt": "Write a function that creates a thread to periodically print a message every n seconds.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "var": {
+                            "message": "Hello, World!",
+                            "n": 5
+                        }
+                    },
+                    "expected_output": "Thread created. Message 'Hello, World!' will be printed every 5 seconds."
+                },
+                {
+                    "input": {
+                        "var": {
+                            "message": "Keep going!",
+                            "n": 10
+                        }
+                    },
+                    "expected_output": "Thread created. Message 'Keep going!' will be printed every 10 seconds."
+                }
+            ]
+        }
+    ]
+}

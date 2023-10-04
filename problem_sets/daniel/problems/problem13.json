@@ -1,0 +1,97 @@
+{
+    "identifier": "problem_1",
+    "description": "Write a function that sends a specified message from a client to a server.",
+    "function_prototype": {
+        "function_name": "sendMessage",
+        "parameters": [
+            {
+                "name": "client",
+                "type": "Client"
+            },
+            {
+                "name": "server",
+                "type": "Server"
+            },
+            {
+                "name": "message",
+                "type": "string"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "void"
+            }
+        ]
+    },
+    "tags": [
+        "Networking",
+        "Medium"
+    ],
+    "correctness_test_suite": [
+        {
+            "input": {
+                "var": {
+                    "client": "Client1",
+                    "server": "Server1",
+                    "message": "Hello, Server1!"
+                }
+            },
+            "expected_output": [
+                "Client1 sent 'Hello, Server1!' to Server1"
+            ]
+        },
+        {
+            "input": {
+                "var": {
+                    "client": "Client2",
+                    "server": "Server2",
+                    "message": "Good morning, Server2!"
+                }
+            },
+            "expected_output": [
+                "Client2 sent 'Good morning, Server2!' to Server2"
+            ]
+        },
+        {
+            "input": {
+                "var": {
+                    "client": "Client3",
+                    "server": "Server3",
+                    "message": "How are you, Server3?"
+                }
+            },
+            "expected_output": [
+                "Client3 sent 'How are you, Server3?' to Server3"
+            ]
+        }
+    ],
+    "prompts": [
+        {
+            "prompt_id": "send_message",
+            "prompt": "Write a function that sends a specified message from a client to a server.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "var": {
+                            "client": "Client1",
+                            "server": "Server1",
+                            "message": "Hello, Server1!"
+                        }
+                    },
+                    "expected_output": "Message sent from Client1 to Server1: Hello, Server1!"
+                },
+                {
+                    "input": {
+                        "var": {
+                            "client": "Client2",
+                            "server": "Server2",
+                            "message": "Goodbye, Server2!"
+                        }
+                    },
+                    "expected_output": "Message sent from Client2 to Server2: Goodbye, Server2!"
+                }
+            ]
+        }
+    ]
+}

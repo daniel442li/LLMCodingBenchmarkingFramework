@@ -1,0 +1,95 @@
+{
+    "identifier": "problem_1",
+    "description": "Write a function that creates a TCP client that connects to a specified server and port.",
+    "function_prototype": {
+        "function_name": "create_tcp_client",
+        "parameters": [
+            {
+                "name": "server",
+                "type": "string"
+            },
+            {
+                "name": "port",
+                "type": "integer"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "TCPClient"
+            }
+        ]
+    },
+    "tags": [
+        "Networking",
+        "TCP",
+        "Intermediate"
+    ],
+    "correctness_test_suite": [
+        {
+            "input": {
+                "var": {
+                    "server": "192.168.1.1",
+                    "port": 8080
+                }
+            },
+            "expected_output": [
+                "TCP client created",
+                "Connected to server 192.168.1.1",
+                "Connected to port 8080"
+            ]
+        },
+        {
+            "input": {
+                "var": {
+                    "server": "localhost",
+                    "port": 3000
+                }
+            },
+            "expected_output": [
+                "TCP client created",
+                "Connected to server localhost",
+                "Connected to port 3000"
+            ]
+        },
+        {
+            "input": {
+                "var": {
+                    "server": "10.0.0.1",
+                    "port": 80
+                }
+            },
+            "expected_output": [
+                "TCP client created",
+                "Connected to server 10.0.0.1",
+                "Connected to port 80"
+            ]
+        }
+    ],
+    "prompts": [
+        {
+            "prompt_id": "tcp_client_creation",
+            "prompt": "Write a function that creates a TCP client that connects to a specified server and port.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "var": {
+                            "server": "192.168.1.1",
+                            "port": 8080
+                        }
+                    },
+                    "expected_output": "TCP client created and connected to server 192.168.1.1 on port 8080"
+                },
+                {
+                    "input": {
+                        "var": {
+                            "server": "localhost",
+                            "port": 3000
+                        }
+                    },
+                    "expected_output": "TCP client created and connected to server localhost on port 3000"
+                }
+            ]
+        }
+    ]
+}

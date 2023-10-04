@@ -1,0 +1,46 @@
+{
+    "identifier": "problem_1",
+    "description": "Write a function that creates a thread to print numbers 1 to 5.",
+    "function_prototype": {
+        "function_name": "printNumbers",
+        "parameters": [],
+        "return_values": [
+            {
+                "type": "void"
+            }
+        ]
+    },
+    "tags": [
+        "Multithreading",
+        "Medium"
+    ],
+    "correctness_test_suite": [
+        {
+            "input": {
+                "var": null
+            },
+            "expected_output": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5"
+            ]
+        }
+    ],
+    "prompts": [
+        {
+            "prompt_id": "create_thread_print_numbers",
+            "prompt": "Write a function that creates a thread to print numbers 1 to 5.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "var": null
+                    },
+                    "expected_output": "Thread created and numbers 1 to 5 printed."
+                }
+            ]
+        }
+    ]
+}

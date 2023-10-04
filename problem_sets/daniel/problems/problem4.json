@@ -1,0 +1,86 @@
+{
+    "identifier": "problem_1",
+    "description": "Write a function that creates a thread to compute the factorial of a number.",
+    "function_prototype": {
+        "function_name": "compute_factorial",
+        "parameters": [
+            {
+                "name": "number",
+                "type": "integer"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "integer"
+            }
+        ]
+    },
+    "tags": [
+        "Multithreading",
+        "Factorial",
+        "Medium"
+    ],
+    "correctness_test_suite": [
+        {
+            "input": {
+                "var": 5
+            },
+            "expected_output": [
+                120
+            ]
+        },
+        {
+            "input": {
+                "var": 3
+            },
+            "expected_output": [
+                6
+            ]
+        },
+        {
+            "input": {
+                "var": 0
+            },
+            "expected_output": [
+                1
+            ]
+        },
+        {
+            "input": {
+                "var": 1
+            },
+            "expected_output": [
+                1
+            ]
+        },
+        {
+            "input": {
+                "var": 10
+            },
+            "expected_output": [
+                3628800
+            ]
+        }
+    ],
+    "prompts": [
+        {
+            "prompt_id": "create_thread_factorial",
+            "prompt": "Write a function that creates a thread to compute the factorial of a number.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "var": 5
+                    },
+                    "expected_output": 120
+                },
+                {
+                    "input": {
+                        "var": 3
+                    },
+                    "expected_output": 6
+                }
+            ]
+        }
+    ]
+}

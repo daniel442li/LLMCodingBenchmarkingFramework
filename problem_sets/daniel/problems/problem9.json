@@ -1,0 +1,126 @@
+{
+    "identifier": "problem_fibonacci_thread",
+    "description": "Write a function that creates a thread to compute the nth Fibonacci number.",
+    "function_prototype": {
+        "function_name": "computeFibonacci",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "integer"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "integer"
+            }
+        ]
+    },
+    "tags": [
+        "Multithreading",
+        "Fibonacci",
+        "Medium"
+    ],
+    "correctness_test_suite": [
+        {
+            "input": {
+                "var": 0
+            },
+            "expected_output": [
+                0
+            ]
+        },
+        {
+            "input": {
+                "var": 1
+            },
+            "expected_output": [
+                1
+            ]
+        },
+        {
+            "input": {
+                "var": 2
+            },
+            "expected_output": [
+                1
+            ]
+        },
+        {
+            "input": {
+                "var": 3
+            },
+            "expected_output": [
+                2
+            ]
+        },
+        {
+            "input": {
+                "var": 4
+            },
+            "expected_output": [
+                3
+            ]
+        },
+        {
+            "input": {
+                "var": 5
+            },
+            "expected_output": [
+                5
+            ]
+        },
+        {
+            "input": {
+                "var": 6
+            },
+            "expected_output": [
+                8
+            ]
+        },
+        {
+            "input": {
+                "var": 7
+            },
+            "expected_output": [
+                13
+            ]
+        },
+        {
+            "input": {
+                "var": 8
+            },
+            "expected_output": [
+                21
+            ]
+        },
+        {
+            "input": {
+                "var": 9
+            },
+            "expected_output": [
+                34
+            ]
+        }
+    ],
+    "prompts": [
+        {
+            "prompt_id": "fibonacci_thread",
+            "prompt": "Write a function that creates a thread to compute the nth Fibonacci number.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "var": 5
+                    },
+                    "expected_output": 5
+                },
+                {
+                    "input": {
+                        "var": 10
+                    },
+                    "expected_output": 55
+                }
+            ]
+        }
+    ]
+}

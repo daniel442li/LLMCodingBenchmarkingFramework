@@ -1,0 +1,46 @@
+{
+    "identifier": "problem_1",
+    "description": "Write a function that creates a thread with a lock to ensure thread-safe operations.",
+    "function_prototype": {
+        "function_name": "create_thread_with_lock",
+        "parameters": [],
+        "return_values": [
+            {
+                "type": "Thread"
+            }
+        ]
+    },
+    "tags": [
+        "Multithreading",
+        "Concurrency",
+        "Intermediate"
+    ],
+    "correctness_test_suite": [
+        {
+            "input": {
+                "var": "ThreadSafeOperations"
+            },
+            "expected_output": [
+                "ThreadSafeOperations thread = new ThreadSafeOperations();",
+                "lock (thread) {",
+                "  // thread-safe operations here",
+                "}"
+            ]
+        }
+    ],
+    "prompts": [
+        {
+            "prompt_id": "create_thread_with_lock",
+            "prompt": "Write a function that creates a thread with a lock to ensure thread-safe operations.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "var": "Not applicable"
+                    },
+                    "expected_output": "Not applicable"
+                }
+            ]
+        }
+    ]
+}

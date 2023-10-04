@@ -1,0 +1,85 @@
+{
+    "identifier": "problem_1",
+    "description": "Write a function that creates a TCP server that listens on a specified port and returns the connection object.",
+    "function_prototype": {
+        "function_name": "createTCPServer",
+        "parameters": [
+            {
+                "name": "port",
+                "type": "number"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "object"
+            }
+        ]
+    },
+    "tags": [
+        "TCP Server",
+        "Networking",
+        "Intermediate"
+    ],
+    "correctness_test_suite": [
+        {
+            "input": {
+                "var": 8080
+            },
+            "expected_output": [
+                {
+                    "type": "TCP",
+                    "port": 8080,
+                    "status": "listening",
+                    "connection": {}
+                }
+            ]
+        },
+        {
+            "input": {
+                "var": 3000
+            },
+            "expected_output": [
+                {
+                    "type": "TCP",
+                    "port": 3000,
+                    "status": "listening",
+                    "connection": {}
+                }
+            ]
+        },
+        {
+            "input": {
+                "var": 1234
+            },
+            "expected_output": [
+                {
+                    "type": "TCP",
+                    "port": 1234,
+                    "status": "listening",
+                    "connection": {}
+                }
+            ]
+        }
+    ],
+    "prompts": [
+        {
+            "prompt_id": "create-tcp-server",
+            "prompt": "Write a function that creates a TCP server that listens on a specified port and returns the connection object.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "var": 8080
+                    },
+                    "expected_output": "TCP server created and listening on port 8080"
+                },
+                {
+                    "input": {
+                        "var": 3000
+                    },
+                    "expected_output": "TCP server created and listening on port 3000"
+                }
+            ]
+        }
+    ]
+}

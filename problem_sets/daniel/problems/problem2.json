@@ -1,0 +1,66 @@
+{
+    "identifier": "problem_1",
+    "description": "Write a function that creates two threads, one to print even numbers and the other to print odd numbers from 1 to 10.",
+    "function_prototype": {
+        "function_name": "print_numbers",
+        "parameters": [],
+        "return_values": []
+    },
+    "tags": [
+        "Multithreading",
+        "Numbers",
+        "Medium"
+    ],
+    "correctness_test_suite": [
+        {
+            "input": {
+                "var": 10
+            },
+            "expected_output": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10"
+            ]
+        },
+        {
+            "input": {
+                "var": 5
+            },
+            "expected_output": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5"
+            ]
+        },
+        {
+            "input": {
+                "var": 0
+            },
+            "expected_output": []
+        }
+    ],
+    "prompts": [
+        {
+            "prompt_id": "print_even_odd_numbers",
+            "prompt": "Write a function that creates two threads, one to print even numbers and the other to print odd numbers from 1 to 10.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "var": 10
+                    },
+                    "expected_output": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10"
+                }
+            ]
+        }
+    ]
+}

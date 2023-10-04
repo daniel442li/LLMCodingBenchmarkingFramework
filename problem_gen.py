@@ -2,7 +2,7 @@ import os
 import json
 import openai 
 from dotenv import find_dotenv, load_dotenv
-
+from schema import main_schema, test_case_schema, prompt_schema
 load_dotenv(find_dotenv())
 
 
@@ -18,73 +18,91 @@ def get_folder_path(folder_name):
     
     return dir_path
 
-def convert(problem):
-    prompt = '''
-    {
-	"identifier": "add_numbers",
-	"description": "Write a function to add two numbers.",
-	"function_prototype": {
-		"function_name": "add",
-		"parameters": [{"name": "a", "type": "int"}, {"name": "b", "type": "int"}],
-		"return_values": [{"type": "int"}]
-	},
-	"correctness_test_suite": [
-		{"input": {"a": 1, "b": 2}, "expected_output": [3]},
-		{"input": {"a": -1, "b": 2}, "expected_output": [1]}
-	],
-	"tags": ["Arithmetic", "Easy"],
-	"prompts": [
-		{
-			"prompt_id": "detailed_prompt",
-			"prompt": "Write a function named 'add' that takes two integer arguments, 'a' and 'b', and returns their sum as an integer."
-		}
-	]
-} 
 
-Here is an example problem description. 
+#things to add: multi threading so this doesn't take forever
+def convert(problem, number, output_name):
+    print(problem)
+    completion = openai.ChatCompletion.create(
+    model="gpt-4-0613",
+    messages=[
+        {"role": "system", "content": "You are a helpful assistant."},
+        {"role": "user", "content": "Generate entries in the schema. Use the following data to create the entries. DO NOT follow the data's format: " + "\n" + str(problem)},
+    ],
+    functions=[{"name": "generate_schema", "parameters": main_schema}],
+    function_call={"name": "generate_schema"},
+    temperature=0,
+    )
 
-Can you generate a problem following format for the JSON file below?
-Only return the JSON file, no other words.
-Make sure the format is a correct json that can loaded with python json library.
-    '''
+    main_json = (completion.choices[0].message.function_call.arguments)
+    main_json = json.loads(main_json)
 
-    prompt = prompt + "\n" + str(problem)
+    completion = openai.ChatCompletion.create(
+    model="gpt-4-0613",
+    messages=[
+        {"role": "system", "content": "You are a helpful assistant."},
+        {"role": "user", "content": "Generate entries in the schema. Use the following data to create the entries. DO NOT follow the data's format: " + "\n" + str(problem)},
+    ],
+    functions=[{"name": "generate_schema", "parameters": test_case_schema}],
+    function_call={"name": "generate_schema"},
+    temperature=0,
+    )
 
-    messages = [{"role": "user", "content": prompt}]
-    response = openai.ChatCompletion.create(
-        model="gpt-4",
-        max_tokens=1000,
-        messages = messages)
-    
-    # Extract the generated code
-    response = str(response.choices[0].message.content.strip())
-    
-    print(response)
-    new_json_obj = json.loads(response)  
-
-    json_collection.append(new_json_obj)
-
+    test_json = (completion.choices[0].message.function_call.arguments)
+    test_json = json.loads(test_json)
 
     
+    completion = openai.ChatCompletion.create(
+    model="gpt-4-0613",
+    messages=[
+        {"role": "system", "content": "You are a helpful assistant."},
+        {"role": "user", "content": "Generate entries in the schema. Use the following data to create the entries. DO NOT follow the data's format: " + "\n" + str(problem)},
+    ],
+    functions=[{"name": "generate_schema", "parameters": prompt_schema}],
+    function_call={"name": "generate_schema"},
+    temperature=0,
+    )
 
-def parse_json_files(folder_path):
+    prompt_json = (completion.choices[0].message.function_call.arguments)
+    prompt_json = json.loads(prompt_json)
+
+    combined_json = {**main_json, **test_json, **prompt_json}
+
+    dir_path = './problem_sets/' + output_name + '/problems'
+    json_string = 'problem' + str(number) + '.json'
+    os.makedirs(dir_path, exist_ok=True)
+
+    file_path = os.path.join(dir_path, json_string)
+
+    with open(file_path, 'w') as file:
+        json.dump(combined_json, file, indent=4)
+
+
+#Converts a JSON file into our schema.
+#We only need a one sentence description so this input can be changed to fit any type of data
+def parse_json_files(folder_path, output_name):
+    count = 1
     for filename in os.listdir(folder_path):
         if filename.endswith(".json"):
             file_path = os.path.join(folder_path, filename)
             with open(file_path, 'r', encoding='utf-8') as f:
                 data = json.load(f)
                 for problem in data:  # Assuming each item in data is a problem
-                    convert(problem)  # Call convert function for each problem
+                    convert(problem["description"], count, output_name)  # Call convert function for each problem
+                    count += 1
 
 if __name__ == "__main__":
     folder_name = input("Please enter the input folder name: ")
-    folder_path = get_folder_path(folder_name)
-    if folder_path:
-        parse_json_files(folder_path)
 
-    with open('edited_jsons.json', 'w') as file:
-        json.dump(json_collection, file, indent=4)
-    
+    output_name = input("Please enter the output folder name: ")
+    #print(folder_name)
+    #folder_name = "test_problems"
+    folder_path = get_folder_path(folder_name)
+
+    if folder_path:
+        json_collection = parse_json_files(folder_path, output_name)
+    else:
+        print("Folder does not exist.")
+
     
 
     

@@ -1,0 +1,91 @@
+{
+    "identifier": "problem_1",
+    "description": "Write a function that creates multiple threads to download multiple files concurrently.",
+    "function_prototype": {
+        "function_name": "multi_threaded_download",
+        "parameters": [
+            {
+                "name": "file_urls",
+                "type": "List[str]"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "None"
+            }
+        ]
+    },
+    "tags": [
+        "Multithreading",
+        "File Download",
+        "Concurrency"
+    ],
+    "correctness_test_suite": [
+        {
+            "input": {
+                "var": [
+                    "https://example.com/file1.jpg",
+                    "https://example.com/file2.jpg",
+                    "https://example.com/file3.jpg"
+                ]
+            },
+            "expected_output": [
+                "file1.jpg downloaded",
+                "file2.jpg downloaded",
+                "file3.jpg downloaded"
+            ]
+        },
+        {
+            "input": {
+                "var": [
+                    "https://example.com/file4.jpg",
+                    "https://example.com/file5.jpg"
+                ]
+            },
+            "expected_output": [
+                "file4.jpg downloaded",
+                "file5.jpg downloaded"
+            ]
+        },
+        {
+            "input": {
+                "var": [
+                    "https://example.com/file6.jpg"
+                ]
+            },
+            "expected_output": [
+                "file6.jpg downloaded"
+            ]
+        }
+    ],
+    "prompts": [
+        {
+            "prompt_id": "download_files_concurrently",
+            "prompt": "Write a function that creates multiple threads to download multiple files concurrently.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "var": [
+                            "file1.txt",
+                            "file2.txt",
+                            "file3.txt"
+                        ]
+                    },
+                    "expected_output": "Files downloaded concurrently."
+                },
+                {
+                    "input": {
+                        "var": [
+                            "image1.jpg",
+                            "image2.jpg",
+                            "image3.jpg",
+                            "image4.jpg"
+                        ]
+                    },
+                    "expected_output": "Files downloaded concurrently."
+                }
+            ]
+        }
+    ]
+}

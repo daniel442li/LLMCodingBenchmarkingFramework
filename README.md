@@ -146,13 +146,15 @@ Here is an example of a more complex problem description that asks an LLM to cor
 ```
 
 ### Automatic Problem Generation
-If you have custom problems, we can automatically generate problem jsons using the `generate_problems.py` script. This script takes in a directory of json files and generates a problem json for each function in each file. 
+If you have custom problems, we can automatically generate problem jsons using the `problem_gen.py` script. This script takes in a directory of json files and generates a problem json for each function in each file. 
 
 The script can be run as follows:
 
 python -m generate_problems.py 
 
 When in the program, you can enter the directory of jsons you want to convert. It searches under the raw_problems subfolder.
+
+You can then define the output folder and it will save under the problem_set folders.
 
 ### Solution Generation
 
